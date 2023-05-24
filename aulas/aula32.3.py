@@ -16,6 +16,6 @@ if tam_nome > 1:
     elif tam_nome > 4 and tam_nome <= 6:
         print("Seu nome é normal")
     else:
-        print('Seu nome é muito grande')
+        print('Seu nome é muito grande!')
 else:
     print('Digite mais letras')
