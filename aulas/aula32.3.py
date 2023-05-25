@@ -18,4 +18,4 @@ if tam_nome > 1:
     else:
         print('Seu nome é muito grande!')
 else:
-    print('Digite mais letras')
+    print('Digite mais letras!')
