@@ -57,3 +57,6 @@ while True:
             os.system('clear')
             print('Obrigado por ter jogado!')
             break
+    if numero_tentativas == 10:
+        print('Você atingiu o número maximo de tentativas!')
+        break
