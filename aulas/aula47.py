@@ -14,13 +14,19 @@ os.system('clear')
 palavra_secreta = input('Digite uma palavra secreta: ')
 dica = input('Insira uma dica para o jogador: ')
 os.system('clear')
+nome = input('insira seu nome: ')
+os.system('clear')
 letras_certas = ''
 numero_tentativas = 0
+chances = 15
+print(f'Bom jogo, {nome}')
 print('Dica:',dica)
 
 while True:
+    print(f'Tentativas restantes {chances}')
     letra_digitada = input('Digite uma letra: ')
     numero_tentativas += 1
+    chances -= 1
     if len(letra_digitada) > 1:
         print('Digite apenas uma letra')
         continue
@@ -39,9 +45,9 @@ while True:
 
     if palavra_formada == palavra_secreta:
         os.system('clear')
-        print('Você acertou e concluiu a palavra, PARABÉNS!')
-        print('A palavra formada é:',palavra_formada)
-        print('Número de tentativas:', numero_tentativas)
+        print(f'Você acertou e concluiu a palavra, PARABÉNS {nome}!')
+        print(f'A palavra formada é: {palavra_formada}')
+        print(f'Número de tentativas: {numero_tentativas}')
         jogar_novamente = input('Deseja jogar novamente? ')
 
         if jogar_novamente.upper() == 'SIM':
@@ -49,14 +55,19 @@ while True:
             palavra_secreta = input('Digite uma palavra secreta: ')
             dica = input('Insira uma dica para o jogador: ')
             os.system('clear')
+            nome = input('insira seu nome: ')
+            os.system('clear')
             letras_certas = ''
             numero_tentativas = 0
+            chances = 15
+            print(f'Bom jogo, {nome}')
             print('Dica:',dica)
             continue
         else:
             os.system('clear')
             print('Obrigado por ter jogado!')
             break
-    if numero_tentativas == 10:
-        print('Você atingiu o número maximo de tentativas!')
+    if numero_tentativas == 15:
+        print('Você não tem mais tentativas!')
+        print(f'Mais sorte na proxima {nome}')
         break
