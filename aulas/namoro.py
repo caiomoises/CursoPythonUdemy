@@ -44,4 +44,4 @@ button_2 = tk.Button(root, text='Sim', bg='#ffb3c1', relief=RIDGE,
 button_2.pack()
 
 
-root.mainloop()
+root.mainloop() 
