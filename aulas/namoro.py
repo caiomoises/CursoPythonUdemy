@@ -22,7 +22,7 @@ def accepted():
         'Meu amor', 'Eu te amo meu amor, lanchinho mais tarde?')
 
 
-def denied():
+def denied(): 
     button_1.destroy()
 
 
