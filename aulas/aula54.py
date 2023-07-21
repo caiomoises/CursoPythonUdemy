@@ -7,7 +7,8 @@ import os
 
 lista_compras = []
 while True:
-    print('1 - Inserir produto; \n2 - Apagar produto;\n3 - Listar produtos.')
+    os.system('cls')
+    print('1 - Inserir produto; \n2 - Apagar produto;\n3 - Listar produtos. \n4 - SAIR\n')
     op = int(input('Escolha uma opção: '))
 
     if op == 1:
@@ -33,3 +34,9 @@ while True:
             os.system('cls')
             for i, nome in enumerate(lista_compras):
                 print(i, nome)
+    elif op == 4:
+        os.system('cls')
+        print('Obrigado por usar este programa!')
+        break
+    else:
+        print('Por favor, insira uma das opções validas: ')
