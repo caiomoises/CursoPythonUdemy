@@ -9,13 +9,13 @@ digitada está na palavra secreta.
 Faça a contagem de tentativas do seu usuário.
 '''
 import os
-os.system('clear')
+os.system('cls')
 
 palavra_secreta = input('Digite uma palavra secreta: ')
 dica = input('Insira uma dica para o jogador: ')
-os.system('clear')
+os.system('cls')
 nome = input('insira seu nome: ')
-os.system('clear')
+os.system('cls')
 letras_certas = ''
 numero_tentativas = 0
 chances = 15
@@ -44,19 +44,19 @@ while True:
     print('Palavra formada:',palavra_formada)
 
     if palavra_formada == palavra_secreta:
-        os.system('clear')
+        os.system('cls')
         print(f'Você acertou e concluiu a palavra, PARABÉNS {nome}!')
         print(f'A palavra formada é: {palavra_formada}')
         print(f'Número de tentativas: {numero_tentativas}')
         jogar_novamente = input('Deseja jogar novamente? ')
 
         if jogar_novamente.upper() == 'SIM':
-            os.system('clear')
+            os.system('cls')
             palavra_secreta = input('Digite uma palavra secreta: ')
             dica = input('Insira uma dica para o jogador: ')
-            os.system('clear')
+            os.system('cls')
             nome = input('insira seu nome: ')
-            os.system('clear')
+            os.system('cls')
             letras_certas = ''
             numero_tentativas = 0
             chances = 15
@@ -64,7 +64,7 @@ while True:
             print('Dica:',dica)
             continue
         else:
-            os.system('clear')
+            os.system('cls')
             print('Obrigado por ter jogado!')
             break
     if numero_tentativas == 15:
